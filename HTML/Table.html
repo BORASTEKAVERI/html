@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTable tag</title>
+
+    <style>
+        table,tr,td,th{
+
+            border: 2px solid blue;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tables -->
+     <h3>Tables</h3>
+
+     <table style="width: 50%;"><!-- start of a table-->
+
+        <!-- Table Body -->
+         <tr>  <!--Table row-->
+            <th><!--Table heading -->
+                Countries
+            </th>
+            <th>
+                States
+            </th>
+            <th>
+                population
+            </th>
+         </tr>
+
+         <!--Table -->
+         <tr>
+            <td>  <!--Table Data-->
+                India
+            </td>
+            <td>
+                Maharashta
+            </td>
+            <td>
+                25,000
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+                Australia
+            </td>
+            <td>
+                sydney
+            </td>
+            <td>
+                30,000
+            </td>
+         </tr>
+
+         <!-- Table Foot -->
+          <tr>
+            <td>
+                2
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                2
+            </td>
+          </tr>
+     </table>  <!-- End of a table-->
+
+     <hr>
+
+     <!--
+     Marging of cells :
+         - Rows 
+            - Rowspan   -> Marging number of row's cells
+         - Columns
+            - Colspan    -> Marging number of column's cells
+
+    -->
+
+    <h4>Rowspan Example</h4>
+<table style="width: 50%;">
+<tbody>
+
+
+
+    <tr>
+        <td>value</td>
+        <td>value</td>
+        <td rowspan="2">value</td>   <!-- Mergs the 2 row's cell -->
+    </tr>
+    <tr>
+        <td>Value</td>
+        <td>value</td>
+    </tr>
+
+    <tr>
+        <td>value</td>
+        <td>value</td>
+
+    </tr>
+
+    <tr>
+        <td>value</td>
+        <td>value</td>
+
+
+    </tr>
+</tbody>
+</table>
+
+<hr>
+
+<h4>Colspan Example</h4>
+<table style="width: 50%;">
+    <tbody>
+        <tr>
+            <td>Value</td>
+            <td>Value</td>
+            <td>Value</td>
+        </tr>
+
+        <tr>
+            <td>Value</td>
+            <td>Value</td>
+            <td>Value</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">value</td>  <!-- Marging 2 collumn's cells -->
+        </tr>
+
+    </tbody>
+</table>
+
+
+<hr>
+
+
+<h3>Lists</h3>
+<!--
+    LISTS
+            - Turning the data elements into a listing part. 
+            - Types of List
+                - Ordered List
+                - Unordered List
+                - Description List
+-->
+
+
+<h4> Ordered List</h4>
+<!-- 
+    - An ordered List is a type of List
+    - It carries the data elements in an Ordered format.
+    - Denoted by Alphabets, Numbers.
+-->
+
+<ol>    <!--Ordered List -->
+    <li>HTML</li>   <!-- LIST -->
+    <li>CSS</li>
+    <li>JS</li>
+</ol>
+
+<ol type="a">       <!--Ordered List-->
+    <li>HTML</li>  
+    <li>CSS</li>
+    <li>JS</li>
+</ol>
+
+<h4>Unorderd List</h4>
+<!--
+    - An Unordered List is a type of List
+    - It carries the data elements in an Unordered format.
+-->
+
+<ul>        <!-- Unordered List -->
+    <li>HTML</li>  
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+
+<ul style="list-style-type: none;">     <!-- Unorderd List -->
+    <li>HTML</li>  <!-- List-->
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+
+<h4>Description List</h4>
+<!--
+    - An Description list is a type of list
+    - It carries the data elements in an Description format.
+    - It provides a descripton for all the terms/ names.
+-->
+
+<dl>        <!--Description List-->
+    <dt>HTML</dt>       <!-- Description Term (name) -->
+        <dd>Hyper Text Markup Language</dd>     <!-- Description Data -->
+    <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    <dt>JS</dt>
+        <dd>Javascript</dd>
+</dl>
+    
+</body>
+</html>
